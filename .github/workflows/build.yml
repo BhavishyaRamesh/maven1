@@ -16,7 +16,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
       - name: SonarQube Scan
-        uses: kitabisa/sonarqube-action@v1.1.0
+        uses: kitabisa/sonarqube-action@v1.4
         with:
           host: ${{ secrets.SONAR_TOKEN }}
           login: ${{ secrets.SONAR_HOST_URL }}

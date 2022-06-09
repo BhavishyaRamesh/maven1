@@ -20,5 +20,5 @@ jobs:
 #         with:
 #           host: ${{ secrets.SONAR_TOKEN }}
 #           login: ${{ secrets.SONAR_HOST_URL }}
-#       - name: check java home
+      - name: check java home
         run: echo $JAVA_HOME

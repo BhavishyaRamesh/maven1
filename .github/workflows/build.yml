@@ -18,7 +18,7 @@ jobs:
       - name: SonarQube Scan
         uses: kitabisa/sonarqube-action@v1.1.0
         with:
-          host: ${{ secrets.SONAR_TOKEN }}
-          login: ${{ secrets.SONAR_HOST_URL }}
+          host:  https://24db-2409-4071-d97-ea4a-e5d3-5cbb-cda0-5ca0.ngrok.io
+          login: 67f202b16ac65225722a61ae40e846e1dfb5cb32
       - name: check java home
         run: echo $JAVA_HOME

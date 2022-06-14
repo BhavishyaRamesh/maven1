@@ -30,7 +30,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: 3452a37865739fd14849fcf5b20c11d04e88bafb
-          SONAR_HOST_URL: http://44.204.237.170:9000/
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Bhavi
+          SONAR_TOKEN: 1e12cda579eb3656120f9b7407955b3327d68c25
+          SONAR_HOST_URL: https://8635-14-98-199-230.ngrok.io
+       
